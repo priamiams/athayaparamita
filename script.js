@@ -174,7 +174,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const package = document.getElementById('package').value;
         const message = document.getElementById('message').value;
         
-        const whatsappMessage = `Halo Athaya Rizka, saya ${name} tertarik untuk berkolaborasi.%0A%0A📧 Email: ${email}%0A📦 Paket yang diminati: ${package}%0A%0A📋 Detail proyek:%0A${message}%0A%0ATerima kasih!`;
+        const whatsappMessage = `Halo Athaya Rizka, saya ${name} tertarik untuk berkolaborasi. Email: ${email} Paket yang diminati: ${package} Detail proyek: ${message} Terima kasih!`;
         
         const whatsappURL = `https://wa.me/628561747876?text=${whatsappMessage}`;
         
