@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athaya Rizka - Influencer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Athaya Rizka</a>
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#ratecard">Rate Card</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-text">
+                <h1 class="hero-title">Athaya <span class="highlight">Rizka</span></h1>
+                <p class="hero-subtitle">Influencer & Content Creator</p>
+                <p class="hero-desc">Specializing in Beauty, Lifestyle, Healthy, Travelling, Sport, Culinary, Technology & More</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn-primary">Book Collaboration</a>
+                    <a href="#ratecard" class="btn-secondary">View Rate Card</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-frame">
+                    <img src="img/foto1.jpg" alt="Athaya Rizka" class="profile-img">
+                    <div class="social-badges">
+                        <a href="https://www.instagram.com/athayaparamita?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="social-badge">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@athay0u?_r=1&_t=ZS-93dss8rnRUQ" target="_blank" class="social-badge">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="section-container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-description">
+                        <p class="intro-text">Halo! Aku Athaya Rizka Paramita, seorang influencer yang berfokus pada konten beauty, lifestyle, healthy living, travelling, sport, kuliner, dan teknologi.</p>
+                        <p>Dengan pengalaman membangun komunitas digital yang aktif dan engaged, saya senang berbagi inspirasi, tips, dan pengalaman sehari-hari melalui konten yang kreatif, estetik, dan informatif.</p>
+                        <p>Aku percaya bahwa konten yang autentik dan relevan adalah kunci untuk membangun hubungan yang bermakna dengan audiens. Setiap kolaborasi saya lakukan dengan penuh perhatian terhadap detail dan nilai yang dapat diberikan kepada brand partners.</p>
+                    </div>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">160K+</span>
+                            <span class="stat-label">Monthly Reach</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">100+</span>
+                            <span class="stat-label">Brands Collaborated</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="img/foto2.jpg" alt="Athaya Rizka">
+                </div>
+            </div>
+            <div class="categories">
+                <h3>Content Categories</h3>
+                <div class="category-tags">
+                    <span class="category-tag">Beauty</span>
+                    <span class="category-tag">Lifestyle</span>
+                    <span class="category-tag">Healthy Living</span>
+                    <span class="category-tag">Travelling</span>
+                    <span class="category-tag">Sport</span>
+                    <span class="category-tag">Culinary</span>
+                    <span class="category-tag">Technology</span>
+                    <span class="category-tag">Fashion</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="section-container">
+            <h2 class="section-title">Content Gallery</h2>
+            
+            <div class="gallery-container" id="galleryContainer">
+                <!-- Images will be loaded via JavaScript -->
+            </div>
+            
+            <!-- Lightbox Modal -->
+            <div id="lightboxModal" class="lightbox-modal">
+                <div class="lightbox-content">
+                    <span class="lightbox-close">&times;</span>
+                    <img class="lightbox-image" id="lightboxImage" src="" alt="">
+                    <div class="lightbox-nav">
+                        <button class="lightbox-prev"><i class="fas fa-chevron-left"></i></button>
+                        <button class="lightbox-next"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rate Card Section -->
+    <section id="ratecard" class="ratecard">
+        <div class="section-container">
+            <h2 class="section-title">Rate Card</h2>
+            <p class="section-subtitle">Choose the package that fits your campaign needs</p>
+            
+            <div class="ratecard-notes">
+                <div class="note-item">
+                    <i class="fas fa-info-circle"></i>
+                    <span>All prices are in Indonesian Rupiah (IDR)</span>
+                </div>
+                <div class="note-item">
+                    <i class="fas fa-clock"></i>
+                    <span>Rates are updated as of February 4, 2026</span>
+                </div>
+            </div>
+            
+            <div class="cards-container">
+                <!-- Card 1 -->
+                <div class="card card-animate">
+                    <div class="card-header">
+                        <h3 class="card-title">Basic Content Package</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-price">
+                            <span class="price-from">Starting from</span>
+                            <span class="price-amount">200K</span>
+                        </div>
+                        <ul class="rate-list">
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>60 detik 1X Reels</span>
+                                <span class="rate-price">200k</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>1X IG Story</span>
+                                <span class="rate-price">30k</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>1X Story + Reels (mirroring)</span>
+                                <span class="rate-price">210k</span>
+                            </li>
+                        </ul>
+                        <div class="terms">
+                            <h4><i class="fas fa-file-contract"></i> Terms & Conditions</h4>
+                            <ul>
+                                <li><i class="fas fa-plus-circle"></i> OWNING +300K</li>
+                                <li><i class="fas fa-plus-circle"></i> TAPLINK 1X +20K</li>
+                                <li><i class="fas fa-plus-circle"></i> VIDEO RAW +200K</li>
+                                <li><i class="fas fa-plus-circle"></i> CONTENT SCRIPT BYTALENT +100K</li>
+                                <li><i class="fas fa-plus-circle"></i> NO MIRRORING +50K</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn-card" data-package="Basic Content Package">Select Package</button>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card card-animate">
+                    <div class="card-header">
+                        <h3 class="card-title">Visit & Session Package</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-price">
+                            <span class="price-from">Starting from</span>
+                            <span class="price-amount">50K</span>
+                        </div>
+                        <ul class="rate-list">
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>Jarak tempuh &lt;1Jam 1X Visit</span>
+                                <span class="rate-price">450k</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>1X IG Feed</span>
+                                <span class="rate-price">50k</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>1X IG Session Story (3 slides)</span>
+                                <span class="rate-price">200k</span>
+                            </li>
+                        </ul>
+                        <div class="platform-badge">
+                            <i class="fab fa-instagram"></i> INSTAGRAM ONLY
+                        </div>
+                        <div class="terms">
+                            <h4><i class="fas fa-file-contract"></i> Terms & Conditions</h4>
+                            <ul>
+                                <li><i class="fas fa-plus-circle"></i> OWNING +300K</li>
+                                <li><i class="fas fa-plus-circle"></i> TAPLINK 1X +20K</li>
+                                <li><i class="fas fa-plus-circle"></i> VIDEO RAW +200K</li>
+                                <li><i class="fas fa-plus-circle"></i> CONTENT SCRIPT BYTALENT +100K</li>
+                                <li><i class="fas fa-plus-circle"></i> NO MIRRORING +50K</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn-card" data-package="Visit & Session Package">Select Package</button>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card card-animate">
+                    <div class="card-header">
+                        <h3 class="card-title">Repost & Barter Package</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-price">
+                            <span class="price-from">Starting from</span>
+                            <span class="price-amount">20K</span>
+                        </div>
+                        <ul class="rate-list">
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>1X Repost Content Brand</span>
+                                <span class="rate-price">20k</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>1X IG Feed Session (3 slides)</span>
+                                <span class="rate-price">100k</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>1X Barter Endorsement</span>
+                                <span class="rate-price">300k</span>
+                            </li>
+                        </ul>
+                        <div class="note">
+                            <i class="fas fa-exclamation-circle"></i>
+                            Minimal senilai harga product barter sudah tertera
+                        </div>
+                        <div class="terms">
+                            <h4><i class="fas fa-file-contract"></i> Terms & Conditions</h4>
+                            <ul>
+                                <li><i class="fas fa-plus-circle"></i> OWNING +300K</li>
+                                <li><i class="fas fa-plus-circle"></i> TAPLINK 1X +20K</li>
+                                <li><i class="fas fa-plus-circle"></i> VIDEO RAW +200K</li>
+                                <li><i class="fas fa-plus-circle"></i> CONTENT SCRIPT BYTALENT +100K</li>
+                                <li><i class="fas fa-plus-circle"></i> NO MIRRORING +50K</li>
+                                <li><i class="fas fa-plus-circle"></i> ADD COLLABORATION +150K</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn-card" data-package="Repost & Barter Package">Select Package</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Insights Section -->
+    <section id="insights" class="insights">
+        <div class="section-container">
+            <h2 class="section-title">Monthly & Weekly Insights</h2>
+            <p class="section-subtitle">Audience engagement and performance metrics</p>
+            
+            <div class="insights-container">
+                <div class="insight-card">
+                    <div class="insight-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Weekly Engagement</h3>
+                    <div class="insight-data">
+                        <div class="data-item">
+                            <span class="data-label">Average:</span>
+                            <span class="data-value">8.2%</span>
+                        </div>
+                        <div class="data-item">
+                            <span class="data-label">Peak Day:</span>
+                            <span class="data-value">Saturday</span>
+                        </div>
+                        <div class="data-item">
+                            <span class="data-label">Best Time:</span>
+                            <span class="data-value">7-9 PM</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="insight-card">
+                    <div class="insight-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Monthly Reach</h3>
+                    <div class="insight-data">
+                        <div class="data-item">
+                            <span class="data-label">Total:</span>
+                            <span class="data-value">160K+</span>
+                        </div>
+                        <div class="data-item">
+                            <span class="data-label">Growth:</span>
+                            <span class="data-value">+12,8%</span>
+                        </div>
+                        <div class="data-item">
+                            <span class="data-label">Demographic:</span>
+                            <span class="data-value">16-34 yrs</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="insight-card">
+                    <div class="insight-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Content Performance</h3>
+                    <div class="insight-data">
+                        <div class="data-item">
+                            <span class="data-label">Top Niche:</span>
+                            <span class="data-value">Beauty & Lifestyle</span>
+                        </div>
+                        <div class="data-item">
+                            <span class="data-label">Avg. Likes:</span>
+                            <span class="data-value">2,3K</span>
+                        </div>
+                        <div class="data-item">
+                            <span class="data-label">Avg. Comments:</span>
+                            <span class="data-value">20</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="insight-card">
+                    <div class="insight-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Video Performance</h3>
+                    <div class="insight-data">
+                        <div class="data-item">
+                            <span class="data-label">Reels Views:</span>
+                            <span class="data-value">200K+</span>
+                        </div>
+                        <div class="data-item">
+                            <span class="data-label">Completion:</span>
+                            <span class="data-value">78%</span>
+                        </div>
+                        <div class="data-item">
+                            <span class="data-label">Saves/Share:</span>
+                            <span class="data-value">1.1K avg</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Weekly Performance Section -->
+            <div class="weekly-performance">
+                <h3>Weekly Performance Highlights</h3>
+                <div class="performance-grid">
+                    <div class="performance-item">
+                        <div class="performance-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <div class="performance-details">
+                            <span class="performance-value">17K</span>
+                            <span class="performance-label">Avg. Weekly Views</span>
+                        </div>
+                    </div>
+                    
+                    <div class="performance-item">
+                        <div class="performance-icon">
+                            <i class="fas fa-share-alt"></i>
+                        </div>
+                        <div class="performance-details">
+                            <span class="performance-value">120</span>
+                            <span class="performance-label">Weekly Shares</span>
+                        </div>
+                    </div>
+                    
+                    <div class="performance-item">
+                        <div class="performance-icon">
+                            <i class="fas fa-comment"></i>
+                        </div>
+                        <div class="performance-details">
+                            <span class="performance-value">70</span>
+                            <span class="performance-label">Weekly Comments</span>
+                        </div>
+                    </div>
+                    
+                    <div class="performance-item">
+                        <div class="performance-icon">
+                            <i class="fas fa-save"></i>
+                        </div>
+                        <div class="performance-details">
+                            <span class="performance-value">30</span>
+                            <span class="performance-label">Weekly Saves</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-container">
+            <h2 class="section-title">Contact & Collaboration</h2>
+            <p class="section-subtitle">Let's create amazing content together</p>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <h3><i class="fas fa-envelope"></i> Get In Touch</h3>
+                        <p>Interested in collaborating? Feel free to reach out through any of the platforms below or use the contact form.</p>
+                        
+                        <div class="social-links">
+                            <a href="https://www.instagram.com/athayaparamita?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="social-link instagram">
+                                <div class="social-icon">
+                                    <i class="fab fa-instagram"></i>
+                                </div>
+                                <div class="social-details">
+                                    <span class="social-name">Instagram</span>
+                                    <span class="social-handle">@athayaparamita</span>
+                                </div>
+                            </a>
+                            
+                            <a href="https://www.tiktok.com/@athay0u?_r=1&_t=ZS-93dss8rnRUQ" target="_blank" class="social-link tiktok">
+                                <div class="social-icon">
+                                    <i class="fab fa-tiktok"></i>
+                                </div>
+                                <div class="social-details">
+                                    <span class="social-name">TikTok</span>
+                                    <span class="social-handle">@athay0u</span>
+                                </div>
+                            </a>
+                            
+                            <a href="https://wa.me/628561747876" target="_blank" class="social-link whatsapp">
+                                <div class="social-icon">
+                                    <i class="fab fa-whatsapp"></i>
+                                </div>
+                                <div class="social-details">
+                                    <span class="social-name">WhatsApp</span>
+                                    <span class="social-handle">+62 856-1747-876</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <h3><i class="fas fa-paper-plane"></i> Quick Inquiry Form</h3>
+                        <form id="collabForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name"><i class="fas fa-user"></i> Your Name</label>
+                                    <input type="text" id="name" placeholder="Enter your name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email"><i class="fas fa-envelope"></i> Email Address</label>
+                                    <input type="email" id="email" placeholder="Enter your email" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="package"><i class="fas fa-box"></i> Package Interest</label>
+                                <select id="package" required>
+                                    <option value="">Select a package</option>
+                                    <option value="Basic Content Package">Basic Content Package</option>
+                                    <option value="Visit & Session Package">Visit & Session Package</option>
+                                    <option value="Repost & Barter Package">Repost & Barter Package</option>
+                                    <option value="Custom Package">Custom Package</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message"><i class="fas fa-comment"></i> Project Details</label>
+                                <textarea id="message" rows="4" placeholder="Tell us about your project, campaign goals, timeline, etc." required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn-primary">
+                                <i class="fab fa-whatsapp"></i> Send Inquiry via WhatsApp
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Athaya Rizka</h3>
+                    <p>Content Creator & Influencer</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#ratecard">Rate Card</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-categories">
+                    <h4>Content Categories</h4>
+                    <div class="category-tags">
+                        <span class="category-tag">Beauty</span>
+                        <span class="category-tag">Lifestyle</span>
+                        <span class="category-tag">Travel</span>
+                        <span class="category-tag">Culinary</span>
+                    </div>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>+62 856-1747-876</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-instagram"></i>
+                        <span>@athayaparamita</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Athaya Rizka. All rights reserved.</p>
+                <p class="footer-note">Created by athayaparamita x Priamiams Digital Labs</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/628561747876" target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
